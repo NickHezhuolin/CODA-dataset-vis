@@ -1,5 +1,5 @@
 # CODA-dataset-vis
-
+CODA可视化工具
 # Dataset Download
 https://coda-dataset.github.io/download.html#link
 
@@ -31,3 +31,8 @@ After decompression, the data organization is listed as follows:
     |---README.md                       -- Detailed instructions about CODA usage
 }
 ```
+
+tips:
+
+1. 第1张图-000001_1616005007200.jpg打不开，而且也没有相应的annotations信息
+2. base里的corner_case.json中前100的sample部分annotations是对的，但是在`image_id: 101`中间空了一张图，导致后面的annotations都错了;所以要跳过一张图来处理后续的annotation
